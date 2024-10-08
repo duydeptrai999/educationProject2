@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "DelLHieuKieuGi"
 include(":app")
- 
+include(":testsupport")

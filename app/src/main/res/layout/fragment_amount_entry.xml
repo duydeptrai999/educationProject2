@@ -1,14 +1,26 @@
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="amountViewModel"
+            type="com.duyth10.dellhieukieugi.viewmodel.AmountEntryViewModel" />
+
+        <variable
+            name="colorViewModel"
+            type="com.duyth10.dellhieukieugi.viewmodel.ColorViewModel" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbar1"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/lavender"
+        android:background="@{colorViewModel.tabLayoutColor}"
         android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,16 +30,14 @@
 
         <ImageButton
             android:id="@+id/btn_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:contentDescription="Back"
             android:src="@drawable/baseline_arrow_back"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="@color/black" />
+         />
 
         <TextView
+            android:id="@+id/textAmountEnt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -42,7 +52,7 @@
         android:background="@android:color/black"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar1">
 
         <TextView
             android:id="@+id/tv_display"
@@ -53,7 +63,7 @@
             android:layout_marginRight="40dp"
             android:layout_marginBottom="16dp"
             android:padding="16dp"
-            android:text="0"
+            android:text="@{amountViewModel.displayText}"
             android:textColor="@color/white"
             android:textSize="32sp"
             app:layout_constraintBottom_toTopOf="@id/grid_layout"
@@ -88,63 +98,75 @@
             <Button
                 android:id="@+id/btn_1"
                 style="@style/DialPadButton"
-                android:text="1" />
+                android:text="1"
+                android:onClick="@{() -> amountViewModel.onNumberButtonClicked(`1`)}" />
+
 
             <Button
                 android:id="@+id/btn_2"
                 style="@style/DialPadButton"
-                android:text="2" />
+                android:text="2"
+                android:onClick="@{() -> amountViewModel.onNumberButtonClicked(`2`)}" />
 
             <Button
                 android:id="@+id/btn_3"
                 style="@style/DialPadButton"
-                android:text="3" />
+                android:text="3"
+                android:onClick="@{() -> amountViewModel.onNumberButtonClicked(`3`)}" />
 
             <Button
                 android:id="@+id/btn_4"
                 style="@style/DialPadButton"
-                android:text="4" />
+                android:text="4"
+                android:onClick="@{() -> amountViewModel.onNumberButtonClicked(`4`)}" />
 
             <Button
                 android:id="@+id/btn_5"
                 style="@style/DialPadButton"
-                android:text="5" />
+                android:text="5"
+                android:onClick="@{() -> amountViewModel.onNumberButtonClicked(`5`)}" />
 
             <Button
                 android:id="@+id/btn_6"
                 style="@style/DialPadButton"
-                android:text="6" />
+                android:text="6"
+                android:onClick="@{() -> amountViewModel.onNumberButtonClicked(`6`)}" />
 
             <Button
                 android:id="@+id/btn_7"
                 style="@style/DialPadButton"
-                android:text="7" />
+                android:text="7"
+                android:onClick="@{() -> amountViewModel.onNumberButtonClicked(`7`)}" />
 
             <Button
                 android:id="@+id/btn_8"
                 style="@style/DialPadButton"
-                android:text="8" />
+                android:text="8"
+                android:onClick="@{() -> amountViewModel.onNumberButtonClicked(`8`)}" />
 
             <Button
                 android:id="@+id/btn_9"
                 style="@style/DialPadButton"
-                android:text="9" />
+                android:text="9"
+                android:onClick="@{() -> amountViewModel.onNumberButtonClicked(`9`)}" />
 
             <Button
                 android:id="@+id/btn_delete"
                 style="@style/DialPadButton"
-                android:text="del" />
+                android:text="del"
+                android:onClick="@{() -> amountViewModel.onNumberButtonClicked(`del`)}" />
 
             <Button
                 android:id="@+id/btn_0"
                 style="@style/DialPadButton"
-                android:text="0" />
+                android:text="0"
+                android:onClick="@{() -> amountViewModel.onNumberButtonClicked(`0`)}" />
 
             <Button
                 android:id="@+id/btn_clean"
                 style="@style/DialPadButton"
-                android:layout_height="89dp"
-                android:text="clean" />
+                android:text="clean"
+                android:onClick="@{() -> amountViewModel.onNumberButtonClicked(`clean`)}" />
         </GridLayout>
 
 
@@ -182,3 +204,4 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

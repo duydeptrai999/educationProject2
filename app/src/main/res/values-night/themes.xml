@@ -1,7 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.DelLHieuKieuGi" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="Theme.MyAppCompatTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Các thiết lập màu sắc và kiểu dáng khác -->
+        <item name="colorPrimary">@color/lavender</item>
+        <item name="colorPrimaryDark">@color/lavender</item>
+        <item name="colorAccent">@color/lavender</item>
     </style>
+
 </resources>

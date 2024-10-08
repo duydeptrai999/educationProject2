@@ -5,6 +5,15 @@
       <entry key="app">
         <State />
       </entry>
+      <entry key="testClickImgCreditShowsDialog()">
+        <State />
+      </entry>
+      <entry key="testClickImgQRNavigatesToAmountEntryFragment()">
+        <State />
+      </entry>
+      <entry key="testsupport">
+        <State />
+      </entry>
     </value>
   </component>
 </project>
