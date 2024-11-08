@@ -51,19 +51,23 @@ public class AmountEntryFragment extends Fragment {
         Button btnConfirm = view.findViewById(R.id.btn_confirm);
         btnConfirm.setOnClickListener(v -> {
             if (!amountViewModel.getDisplayText().getValue().equals("0")) {
-                Intent intent = new Intent();
-                intent.setComponent(new ComponentName("com.duyth10.dellhieukieugiservice", "com.duyth10.dellhieukieugiservice.ui.MainActivity"));
-                intent.putExtra("data", amountViewModel.getDisplayText().getValue());
+
+//                for(int i = 0 ; i<100; i++) {
+                    Intent intent = new Intent();
+                    intent.setComponent(new ComponentName("com.duyth10.dellhieukieugiservice", "com.duyth10.dellhieukieugiservice.ui.MainActivity"));
+                    intent.putExtra("data", amountViewModel.getDisplayText().getValue());
+
+                    Log.d("AmountEntryFrg", "" + amountViewModel.getDisplayText().getValue());
+
+                    intent.putExtra("statusBarColor", colorViewModel.getStatusBarColor().getValue());
+                    intent.putExtra("toolbarColor", colorViewModel.getTabLayoutColor().getValue());
+
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                    //  intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
 
-                intent.putExtra("statusBarColor", colorViewModel.getStatusBarColor().getValue());
-                intent.putExtra("toolbarColor", colorViewModel.getTabLayoutColor().getValue());
-
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                //  intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-
-
-                requireActivity().startActivity(intent);
+                    requireActivity().startActivity(intent);
+              // }
 
             } else {
                 Toast.makeText(getContext(), "Số tiền không thể bằng 0!", Toast.LENGTH_SHORT).show();
