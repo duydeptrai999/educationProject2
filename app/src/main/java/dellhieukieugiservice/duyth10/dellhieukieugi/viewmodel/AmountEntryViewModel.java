@@ -1,9 +1,9 @@
-package com.duyth10.dellhieukieugi.viewmodel;
+package dellhieukieugiservice.duyth10.dellhieukieugi.viewmodel;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-import com.duyth10.dellhieukieugi.model.AmountEntryModel;
+import dellhieukieugiservice.duyth10.dellhieukieugi.model.AmountEntryModel;
 
 public class AmountEntryViewModel extends BaseViewModel {
     private final AmountEntryModel model;

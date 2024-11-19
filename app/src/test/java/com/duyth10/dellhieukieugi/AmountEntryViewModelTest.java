@@ -8,8 +8,8 @@ import static org.mockito.Mockito.verify;
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule;
 import androidx.lifecycle.Observer;
 
-import com.duyth10.dellhieukieugi.model.AmountEntryModel;
-import com.duyth10.dellhieukieugi.viewmodel.AmountEntryViewModel;
+import dellhieukieugiservice.duyth10.dellhieukieugi.model.AmountEntryModel;
+import dellhieukieugiservice.duyth10.dellhieukieugi.viewmodel.AmountEntryViewModel;
 
 import org.junit.After;
 import org.junit.Before;

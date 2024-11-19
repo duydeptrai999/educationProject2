@@ -1,4 +1,4 @@
-package com.duyth10.dellhieukieugi.ui;
+package dellhieukieugiservice.duyth10.dellhieukieugi.ui;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,12 +19,11 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.navigation.Navigation;
 
 import com.duyth10.dellhieukieugi.R;
 import com.duyth10.dellhieukieugi.databinding.FragmentHomeBinding;
-import com.duyth10.dellhieukieugi.viewmodel.ColorViewModel;
-import com.duyth10.dellhieukieugi.viewmodel.HomeViewModel;
+import dellhieukieugiservice.duyth10.dellhieukieugi.viewmodel.ColorViewModel;
+import dellhieukieugiservice.duyth10.dellhieukieugi.viewmodel.HomeViewModel;
 import com.google.android.material.navigation.NavigationView;
 
 public class HomeFragment extends BaseFragment {

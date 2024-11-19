@@ -1,12 +1,10 @@
-package com.duyth10.dellhieukieugi.ui;
+package dellhieukieugiservice.duyth10.dellhieukieugi.ui;
 
 import android.os.Bundle;
-import androidx.annotation.NonNull;
+
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+
 import android.util.Log;
 
 public abstract class BaseFragment extends Fragment {

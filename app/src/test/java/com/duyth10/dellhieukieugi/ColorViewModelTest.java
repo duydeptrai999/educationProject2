@@ -14,8 +14,7 @@ import org.mockito.MockitoAnnotations;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.verify;
 
-import com.duyth10.dellhieukieugi.viewmodel.ColorViewModel;
-import com.duyth10.dellhieukieugi.R;
+import dellhieukieugiservice.duyth10.dellhieukieugi.viewmodel.ColorViewModel;
 
 public class ColorViewModelTest {
 

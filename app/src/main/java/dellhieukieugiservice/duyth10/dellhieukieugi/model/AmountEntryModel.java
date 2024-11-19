@@ -1,4 +1,4 @@
-package com.duyth10.dellhieukieugi.model;
+package dellhieukieugiservice.duyth10.dellhieukieugi.model;
 
 import java.text.NumberFormat;
 import java.util.Locale;

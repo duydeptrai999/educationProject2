@@ -7,8 +7,14 @@
     <uses-permission android:name="android.permission.RECEIVE_BROADCAST" />
     <uses-permission android:name="com.duyth10.dellhieukieugiservice.MY_SERVICE_PERMISSION" /> <!-- khi khởi tạo service cần yêu cầu cái này (ít nhất từ android 12 trở lên) -->
     <queries>
-        <package android:name="com.duyth10.dellhieukieugiservice" />
+        <package android:name="com.duyth10.dellhieukieugi" />
     </queries>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+    <uses-permission android:name="com.duyth10.dellhieukieugiservice.BIND_SERVICE_PERMISSION" />
+
+    <uses-permission android:name="android.permission.BIND_SERVICE" />
+
 
     <application
 
@@ -24,7 +30,7 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".MainActivity"
+            android:name="dellhieukieugiservice.duyth10.dellhieukieugi.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             >

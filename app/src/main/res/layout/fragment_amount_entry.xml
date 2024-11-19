@@ -5,11 +5,11 @@
     <data>
         <variable
             name="amountViewModel"
-            type="com.duyth10.dellhieukieugi.viewmodel.AmountEntryViewModel" />
+            type="dellhieukieugiservice.duyth10.dellhieukieugi.viewmodel.AmountEntryViewModel" />
 
         <variable
             name="colorViewModel"
-            type="com.duyth10.dellhieukieugi.viewmodel.ColorViewModel" />
+            type="dellhieukieugiservice.duyth10.dellhieukieugi.viewmodel.ColorViewModel" />
     </data>
 
 <androidx.constraintlayout.widget.ConstraintLayout

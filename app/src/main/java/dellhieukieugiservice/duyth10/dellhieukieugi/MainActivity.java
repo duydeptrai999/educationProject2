@@ -1,4 +1,4 @@
-package com.duyth10.dellhieukieugi;
+package dellhieukieugiservice.duyth10.dellhieukieugi;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -6,12 +6,13 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Window;
 
-import com.duyth10.dellhieukieugi.ui.HomeFragment;
+import com.duyth10.dellhieukieugi.R;
+
+import dellhieukieugiservice.duyth10.dellhieukieugi.ui.HomeFragment;
 
 public class MainActivity extends AppCompatActivity {
 

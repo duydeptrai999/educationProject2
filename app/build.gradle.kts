@@ -34,6 +34,7 @@ android {
     buildFeatures {
         dataBinding = true
         viewBinding = true
+        aidl = true
     }
 
     compileOptions {
@@ -132,7 +133,7 @@ dependencies {
     // Core libraries
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("com.google.android.material:material:1.12.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.constraintlayout:constraintlayout:2.2.0")
 
     // Unit Test dependencies
     testImplementation("junit:junit:4.13.2")
@@ -143,7 +144,7 @@ dependencies {
     testImplementation("androidx.arch.core:core-testing:2.2.0")
 
     // Android Test dependencies
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
     androidTestImplementation("androidx.test.espresso:espresso-contrib:3.5.1")
     androidTestImplementation("androidx.test.espresso:espresso-idling-resource:3.5.1")
     androidTestImplementation("androidx.test.espresso:espresso-intents:3.5.1")
@@ -156,7 +157,7 @@ dependencies {
     debugImplementation("androidx.fragment:fragment-testing:1.8.3")
 
     // Navigation Component
-    implementation("androidx.navigation:navigation-fragment:2.7.0")
+    implementation("androidx.navigation:navigation-fragment:2.8.4")
 }
 
 tasks.named("jacocoUnitTestReport") {

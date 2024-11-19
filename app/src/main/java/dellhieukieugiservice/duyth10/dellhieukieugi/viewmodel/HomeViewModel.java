@@ -1,6 +1,4 @@
-package com.duyth10.dellhieukieugi.viewmodel;
-
-import android.view.View;
+package dellhieukieugiservice.duyth10.dellhieukieugi.viewmodel;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
